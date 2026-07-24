@@ -2,31 +2,49 @@ import streamlit as st
 
 st.set_page_config(page_title="Carrier PDF Rate Tools", layout="centered")
 
-# Custom styling for bigger, card-style page links
 st.markdown("""
 <style>
-    .stPageLink {
-        padding: 12px 18px !important;
-        border: 0.5px solid rgba(128,128,128,0.3) !important;
-        border-radius: 12px !important;
-        margin-bottom: 8px !important;
+    .carrier-card {
+        aspect-ratio: 1;
+        background: rgba(128,128,128,0.05);
+        border: 0.5px solid rgba(128,128,128,0.3);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none !important;
+        color: inherit !important;
     }
-    .stPageLink p {
-        font-size: 18px !important;
-        font-weight: 500 !important;
+    .carrier-card:hover {
+        border-color: rgba(128,128,128,0.6);
     }
-    h1 {
-        font-size: 32px !important;
+    .carrier-icon {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .carrier-label {
+        font-size: 15px;
+        font-weight: 600;
     }
 </style>
 """, unsafe_allow_html=True)
 
-st.title("📦 Carrier PDF Rate Tools")
-st.markdown("<p style='font-size:17px; color:gray;'>Select the carrier you want to update</p>", unsafe_allow_html=True)
+st.markdown("## 📦 Carrier PDF Rate Tools")
+st.markdown("Select the carrier you want to update")
 st.write("")
 
-st.page_link("pages/1_ONE_TAWB.py", label="ONE TAWB", icon="📄")
-st.page_link("pages/2_COSCO_NEUR.py", label="COSCO NEUR to USA", icon="📄")
-st.page_link("pages/3_COSCO_Italy.py", label="COSCO Italy to USA", icon="📄")
-st.page_link("pages/4_EMC_NEUR.py", label="EMC NEUR to USA", icon="📄")
-st.page_link("pages/5_MSC_NEUR.py", label="MSC NEUR to USA", icon="📄")
+carriers = [
+    ("ONE TAWB", "pages/1_ONE_TAWB.py"),
+    ("COSCO NEUR to USA", "pages/2_COSCO_NEUR.py"),
+    ("COSCO Italy to USA", "pages/3_COSCO_Italy.py"),
+    ("EMC NEUR to USA", "pages/4_EMC_NEUR.py"),
+    ("MSC NEUR to USA", "pages/5_MSC_NEUR.py"),
+]
+
+cols = st.columns(3)
+for i, (label, page) in enumerate(carriers):
+    with cols[i % 3]:
+        st.page_link(page, label=label, icon="📄", use_container_width=True)

@@ -12,9 +12,13 @@ st.markdown("""
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 15px;
+        font-size: 19px;
         font-weight: 600;
         white-space: normal;
+        line-height: 1.6;
+    }
+    div[data-testid="stButton"] > button p {
+        font-size: 19px !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -24,11 +28,11 @@ st.markdown("Select the carrier you want to update")
 st.write("")
 
 carriers = [
-    ("📄\n\nONE TAWB", "pages/1_ONE_TAWB.py"),
-    ("📄\n\nCOSCO NEUR to USA", "pages/2_COSCO_NEUR.py"),
-    ("📄\n\nCOSCO Italy to USA", "pages/3_COSCO_Italy.py"),
-    ("📄\n\nEMC NEUR to USA", "pages/4_EMC_NEUR.py"),
-    ("📄\n\nMSC NEUR to USA", "pages/5_MSC_NEUR.py"),
+    ("📄\n\n\nONE TAWB", "pages/1_ONE_TAWB.py"),
+    ("📄\n\n\nCOSCO NEUR to USA", "pages/2_COSCO_NEUR.py"),
+    ("📄\n\n\nCOSCO Italy to USA", "pages/3_COSCO_Italy.py"),
+    ("📄\n\n\nEMC NEUR to USA", "pages/4_EMC_NEUR.py"),
+    ("📄\n\n\nMSC NEUR to USA", "pages/5_MSC_NEUR.py"),
 ]
 
 cols = st.columns(3)

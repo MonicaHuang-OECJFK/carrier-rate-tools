@@ -13,12 +13,13 @@ st.markdown("""
         align-items: center;
         justify-content: center;
         font-size: 19px;
-        font-weight: 600;
+        font-weight: 700;
         white-space: normal;
         line-height: 1.6;
     }
     div[data-testid="stButton"] > button p {
         font-size: 19px !important;
+        font-weight: 700 !important;
     }
 </style>
 """, unsafe_allow_html=True)

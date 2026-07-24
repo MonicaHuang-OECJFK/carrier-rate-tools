@@ -11,7 +11,7 @@ from cosco_italy.coscopdf_extract import (
 )
 from cosco_italy.excel_writer import update_cheatsheet
 
-st.title("COSCO Italy to USA rate updater")
+st.title("COSCO Italy to USA Rate Updater")
 
 st.markdown("#### 🔧 What this tool does")
 st.markdown("""

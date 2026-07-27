@@ -263,6 +263,29 @@ def _write_us_inland(wb, ramp_rows, max_scan_rows=40):
     return updated_count, skipped_rows, mismatched_rows
 
 
+def update_us_inland_only(excel_path, ramp_rows, output_path=None):
+    """
+    主函式：只把 ramp_rows 寫入 cheatsheet 的 'US inland' sheet，不動 OFT。
+
+    COSCO NEUR 這條線的 US inland 費率有時候會跟 Ocean Freight 分開寄一份
+    PDF，這個函式讓你可以單獨跑 US inland 更新，不需要同時準備 Ocean
+    Freight 的 PDF。
+
+    參數：
+      excel_path  : cheatsheet 的路徑
+      ramp_rows   : cosco_parser.extract_us_inland() 產出的 list of dict
+      output_path : 輸出路徑，None 則直接覆蓋原檔
+
+    回傳：
+      (updated_count, skipped_rows, mismatched_rows) —— 跟 _write_us_inland 一樣
+    """
+    wb = openpyxl.load_workbook(excel_path)
+    updated_count, skipped_rows, mismatched_rows = _write_us_inland(wb, ramp_rows)
+    out = output_path or excel_path
+    wb.save(out)
+    return updated_count, skipped_rows, mismatched_rows
+
+
 def update_cheatsheet(excel_path, all_rates, ramp_rows=None, output_path=None, max_scan_rows=95):
     """
     主函式：把 PDF 萃取結果寫入 cheatsheet（單次讀檔、單次存檔）。

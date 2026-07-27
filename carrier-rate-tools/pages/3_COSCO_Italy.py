@@ -13,7 +13,7 @@ from cosco_italy.excel_writer import update_cheatsheet
 
 st.title("COSCO Italy to USA Rate Updater")
 
-st.markdown("#### 🔧 What this tool does")
+st.markdown("### 📌 What this tool does")
 st.markdown("""
 - 📄 Extracts **Ocean Freight rates** from COSCO PDF (Direct Ports + Outports)
 - ✍️ Updates **OFT 20' / 40' / 40HC** in the cheatsheet
@@ -23,7 +23,8 @@ st.markdown("""
   produced automatically for each period
 """)
 
-st.markdown("#### ⚠️ Important Notes")
+---
+st.markdown("### ⚠️ Important Notes")
 st.markdown("""
 - If a PDF has **new or removed** POL/POD lanes, remember to add/delete the
   corresponding row in the cheatsheet, and add the matching pair to the **Mapping**

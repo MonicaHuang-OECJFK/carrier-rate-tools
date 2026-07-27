@@ -7,14 +7,15 @@ from msc_neur.excel_writer import update_rates
 
 st.title("MSC NEUR to USA Rate Updater")
 
-st.markdown("#### 🔧 What this tool does")
+st.markdown("### 📌 What this tool does")
 st.markdown("""
 - 📄 Extracts ocean freight rates: **POL / POD / 20DV / 40DV(HC)** from MSC
   East Coast / West Coast / Gulf Coast PDFs
 - ✍️ Updates the **20' / 40' / 40'HC** columns in the cheatsheet
 """)
 
-st.markdown("#### ⚠️ Important Notes")
+---
+st.markdown("### ⚠️ Important Notes")
 st.markdown("""
 - MSC sends **three separate PDFs** (East Coast, West Coast, Gulf Coast) — upload all
   three below

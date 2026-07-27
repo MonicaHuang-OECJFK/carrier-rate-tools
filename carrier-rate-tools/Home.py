@@ -24,7 +24,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("## 📦 Carrier PDF Rate Tools")
+st.title("📦 Carrier PDF Rate Tools")
 st.markdown("### Select the carrier you want to update")
 st.write("")
 

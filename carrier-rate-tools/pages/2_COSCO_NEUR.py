@@ -7,18 +7,17 @@ from cosco_neur.excel_writer import update_cheatsheet
 
 st.title("COSCO NEUR to USA Rate Updater")
 
-st.markdown("### 📌 What this tool does")
+
 st.markdown("""
+### 📌 What this tool does
 - 📄 Extracts **Ocean Freight rates** from COSCO NEUR PDF 
 - ✍️ Updates **OFT 20DV / 40DV/40HQ** in the cheatsheet
 - 🚂 If the PDF includes US inland rates, also extracts and updates
   **US inland 20DV / 40DV/40HQ (/ 40RF/40RQ)** — otherwise this step is
   skipped
-""")
-
+  
 ---
-st.markdown("### ⚠️ Important Notes")
-st.markdown("""
+### ⚠️ Important Notes
 - If a PDF has **new or removed** POL/POD lanes, remember to add/delete the
   corresponding row in the cheatsheet, and add the matching pair to the **Mapping**
   tab with the **exact** POL/POD spelling as it appears in the PDF extraction

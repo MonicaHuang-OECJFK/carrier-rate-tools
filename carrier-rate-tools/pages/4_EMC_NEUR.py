@@ -7,15 +7,14 @@ from emc_neur.excel_writer import update_rates
 
 st.title("EMC TAWB Rate Updater")
 
-st.markdown("### 📌 What this tool does")
+
 st.markdown("""
+### 📌 What this tool does
 - 📄 Extracts ocean freight rate **POL / POD / 2SD / 4SD / 4SH** from EMC PDF
 - ✍️ Updates the **20' / 40' / 40'HC** columns in the cheatsheet
-""")
 
 ---
-st.markdown("### ⚠️ Important Notes")
-st.markdown("""
+### ⚠️ Important Notes
 - If the PDF has **new or removed** POL/POD lanes, remember to add/delete the
   corresponding row in the cheatsheet, with the **exact**
   POL/POD spelling as it appears in the PDF extraction

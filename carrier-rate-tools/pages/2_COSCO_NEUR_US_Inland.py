@@ -7,16 +7,15 @@ from cosco_neur.excel_writer import update_us_inland_only
 
 st.title("COSCO NEUR US Inland Rate Updater")
 
-st.markdown("### 📌 What this tool does")
+
 st.markdown("""
+### 📌 What this tool does
 - ✍️ Updates only the **US inland** tab in the cheatsheet
 - 🚂 Extracts **US inland 20DV / 40DV/40HQ (/ 40RF/40RQ)** rates from a
   standalone COSCO NEUR US inland PDF
-""")
 
 ---
-st.markdown("### ⚠️ Important Notes")
-st.markdown("""
+### ⚠️ Important Notes
 - Use this page when COSCO sends the US inland rates as their **own separate
   PDF**, instead of together with the Ocean Freight PDF. For a combined PDF,
   use the main COSCO NEUR page instead.

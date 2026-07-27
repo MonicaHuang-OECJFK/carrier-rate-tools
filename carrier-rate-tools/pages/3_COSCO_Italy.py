@@ -31,7 +31,7 @@ st.markdown("""
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-pdf_file   = st.file_uploader("Upload COSCO PDF", type="pdf")
+pdf_file   = st.file_uploader("Upload COSCO Italy PDF", type="pdf")
 excel_file = st.file_uploader("Upload Cheatsheet (xlsx, must contain Mapping tab)", type="xlsx")
 
 if st.button("Run"):

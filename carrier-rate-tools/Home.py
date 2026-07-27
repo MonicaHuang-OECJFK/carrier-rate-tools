@@ -31,6 +31,7 @@ st.write("")
 carriers = [
     ("📄\n\n\nONE TAWB", "pages/1_ONE_TAWB.py"),
     ("📄\n\n\nCOSCO NEUR to USA", "pages/2_COSCO_NEUR.py"),
+    ("📄\n\n\nCOSCO NEUR US Inland", "pages/2_COSCO_NEUR_US_Inland.py"),
     ("📄\n\n\nCOSCO Italy to USA", "pages/3_COSCO_Italy.py"),
     ("📄\n\n\nEMC NEUR to USA", "pages/4_EMC_NEUR.py"),
     ("📄\n\n\nMSC NEUR to USA", "pages/5_MSC_NEUR.py"),

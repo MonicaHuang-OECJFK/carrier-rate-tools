@@ -15,8 +15,7 @@ st.markdown("""
 - 🚂 If the PDF includes US inland rates, also extracts and updates
   **US inland 20DV / 40DV/40HQ (/ 40RF/40RQ)** — otherwise this step is
   skipped
-  
----
+
 ### ⚠️ Important Notes
 - If a PDF has **new or removed** POL/POD lanes, remember to add/delete the
   corresponding row in the cheatsheet, and add the matching pair to the **Mapping**

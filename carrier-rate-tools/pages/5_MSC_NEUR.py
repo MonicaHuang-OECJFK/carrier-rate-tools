@@ -14,7 +14,6 @@ st.markdown("""
   East Coast / West Coast / Gulf Coast PDFs
 - ✍️ Updates the **20' / 40' / 40'HC** columns in the cheatsheet
 
----
 ### ⚠️ Important Notes
 - MSC sends **three separate PDFs** (East Coast, West Coast, Gulf Coast) — upload all
   three below

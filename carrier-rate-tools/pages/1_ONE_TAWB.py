@@ -21,7 +21,6 @@ st.markdown("""
 - Filters **DRY** containers only  
 - Maps **Origin → Destination → Rates → Valid Date**
 
----
 ### ⚠️ Important Note
 - If the PDF contains **both old and updated validity dates** (e.g., crossed-out or revised dates),
   the result may be **incorrect or outdated**.

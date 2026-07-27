@@ -22,8 +22,7 @@ st.markdown("""
 - 🚂 Updates **US inland 20DV / 40DV/40HQ** rates from the Rail Ramp table
   — if the PDF lists more than one rate period, a separate updated cheatsheet is
   produced automatically for each period
-  
----
+
 ### ⚠️ Important Notes
 - If a PDF has **new or removed** POL/POD lanes, remember to add/delete the
   corresponding row in the cheatsheet, and add the matching pair to the **Mapping**

@@ -14,7 +14,6 @@ st.markdown("""
 - 🚂 Extracts **US inland 20DV / 40DV/40HQ (/ 40RF/40RQ)** rates from a
   standalone COSCO NEUR US inland PDF
 
----
 ### ⚠️ Important Notes
 - Use this page when COSCO sends the US inland rates as their **own separate
   PDF**, instead of together with the Ocean Freight PDF. For a combined PDF,

@@ -13,7 +13,6 @@ st.markdown("""
 - 📄 Extracts ocean freight rate **POL / POD / 2SD / 4SD / 4SH** from EMC PDF
 - ✍️ Updates the **20' / 40' / 40'HC** columns in the cheatsheet
 
----
 ### ⚠️ Important Notes
 - If the PDF has **new or removed** POL/POD lanes, remember to add/delete the
   corresponding row in the cheatsheet, with the **exact**

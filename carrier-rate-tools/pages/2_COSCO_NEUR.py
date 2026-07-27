@@ -5,6 +5,8 @@ from datetime import date
 from cosco_neur.cosco_parser import extract_ocean_rates, extract_us_inland
 from cosco_neur.excel_writer import update_cheatsheet
 
+
+st.set_page_config(page_title="COSCO NEUR Parser", layout="centered")
 st.title("COSCO NEUR to USA Rate Updater")
 
 

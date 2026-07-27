@@ -5,6 +5,7 @@ from datetime import date
 from msc_neur.msc_extract import extract, extract_effective_date
 from msc_neur.excel_writer import update_rates
 
+st.set_page_config(page_title="MSC NEUR Parser", layout="centered")
 st.title("MSC NEUR to USA Rate Updater")
 
 

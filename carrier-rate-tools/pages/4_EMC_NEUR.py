@@ -5,6 +5,7 @@ from datetime import date
 from emc_neur.emc_extract import extract
 from emc_neur.excel_writer import update_rates
 
+st.set_page_config(page_title="EMC TAWB Parser", layout="centered")
 st.title("EMC TAWB Rate Updater")
 
 

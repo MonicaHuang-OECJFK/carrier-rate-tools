@@ -11,6 +11,8 @@ from cosco_italy.coscopdf_extract import (
 )
 from cosco_italy.excel_writer import update_cheatsheet
 
+
+st.set_page_config(page_title="COSCO Italy Parser", layout="centered")
 st.title("COSCO Italy to USA Rate Updater")
 
 

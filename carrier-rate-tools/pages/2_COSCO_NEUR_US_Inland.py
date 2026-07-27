@@ -5,6 +5,7 @@ from datetime import date
 from cosco_neur.cosco_parser import extract_us_inland
 from cosco_neur.excel_writer import update_us_inland_only
 
+st.set_page_config(page_title="COSCO NEUR US Inland Parser", layout="centered")
 st.title("COSCO NEUR US Inland Rate Updater")
 
 
